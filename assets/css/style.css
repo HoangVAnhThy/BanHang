@@ -1,0 +1,344 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav-link{
+    text-decoration: none;
+}
+
+html{
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.header{
+    height: 50px;
+    background-color: dodgerblue;
+}
+
+.header #align{
+    width: 85%;
+    margin: 0 auto ;
+}
+#nav li{
+    display: inline-block;
+}
+#nav li a{
+    color: #fff;
+    line-height: 50px;
+    display: inline-block;
+    padding: 0 22px;
+    font-size: 1.4rem;
+}
+#nav li:hover a{
+    color: black;
+    background-color: lavender;
+}
+
+.wrapper{
+    width: 86%;
+    height: 1000px;
+    margin : 15px auto;
+    display: flex;
+}
+
+.wrapper .menu {
+ height: 100%;
+ width: 30%;
+ background-color: #ccc;
+ border-radius: 2px;
+}
+.wrapper .menu .menutitle{
+    height: 40px;
+    position: relative;
+    right: 15px;
+    margin-top: 10px;
+    background-color: dodgerblue;
+    border-radius: 2px;
+}
+.wrapper .menu #search {
+    height: 100px;
+}
+
+.wrapper .menu .menutitle p {
+    line-height: 40px;
+    margin-left: 10px;
+    color: #fff;
+}
+
+
+.wrapper .content{
+    height: 100%;
+    width: 100%;
+
+    margin-left: 10px;
+}
+
+.wrapper .content .table{
+    margin-top: 30px;
+}
+
+.wrapper .content .table th,td {
+    padding: 0 17px;
+    height: 30px;
+}
+.wrapper .content .table table,th{
+    border: 1px solid #ccc;
+    border-collapse: collapse; 
+}
+.wrapper .content .table table {
+    width: 100%;
+}
+.footer{
+
+}
+
+main{
+    background-color: #dddddd;
+    min-height: 300px;
+    padding: 7.5px 15px;
+}
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.imageUploadContainer{
+    text-align: center;
+}
+.imageUpload{
+    margin-top: 20px;
+    padding: 7.5px 0;
+}
+.fileInfomation{
+    margin-top: 20px;
+}
+#imageUploadInput{
+    display: none;
+}
+#imagePreview{
+    max-width: 300px;
+}
+#imageUploadInputBtn{
+    display: inline-block;
+    padding: 7.5px 15px;
+    background-color: #0099cc;
+    color: #ffffff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.admin-container{
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    height: 500px;
+    line-height: 500px;
+}
+
+table, td, th {
+    border: 1px solid;
+  }
+
+.product-table{
+    font-size: 1.4rem;
+    margin: 50px auto;
+}
+
+.product-table th{
+    min-width: 125px;
+}
+
+.product-image{
+    width: 60px;
+    height: 60px;
+}
+
+
+.product-table__item td{
+    text-align: center;
+}
+
+
+.product-table__control{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+label{
+    display: block;
+    width: fit-content;
+    margin: 8px 0;
+}
+
+.form-input{
+    margin: 30px auto;
+    width: fit-content;
+    font-size: 1.4rem;
+}
+
+input{
+    width: 500px;
+    height: 30px;
+}
+
+select{
+    height: 30px;
+}
+
+.admin-btn{
+    display: inline-block;
+    padding: 7.5px 15px;
+    background-color: #0099cc;
+    color: #ffffff;
+    cursor: pointer;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    margin-top: 10px;
+}
+
+.product-add{
+    min-width: 45px;
+    margin-top: 30px;
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
+.product-change{
+    width: 45px;
+    padding: 7.5px 0;
+    margin-right: 5px;
+    text-decoration: none;
+    display: block;
+    margin-top: 0;
+}
+.product-delete{
+    width: 45px;
+    padding: 7.5px 0;
+    margin-left: 5px;
+    text-decoration: none;
+    display: block;
+    margin-top: 0;
+}
+
+
+.input-div {
+    width: 155px;
+    height: 155px;
+    margin: 10px 0 0 0 ;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 2px dotted black;
+    background-color: white;
+    position: relative;
+  }
+  
+  .file {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  output {
+    width: 150px;
+    min-height: 150px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 15px;
+    position: relative;
+    border-radius: 5px;
+  }
+  
+output .image {
+    height: 150px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    position: relative;
+  }
+  
+output .image img {
+    height: 100%;
+    width: 100%;
+  }
+  
+.hidden{
+    display: none;
+}
+
+.login-form{
+    position: fixed;
+    width: 450px;
+    background-color: white;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    top: 25%;
+    right: 35%;
+    border-radius: 3px;
+}
+
+.form-header{
+    width: fit-content;
+    margin: 30px auto;
+    font-size: 1.8rem;
+    font-weight: 300;
+}
+
+.form__group{
+    width: 90%;
+    margin: 15px auto;
+}
+
+.form__input{
+    width: 100%;
+    border: 1px solid #888;
+    padding-left: 15px;
+    height: 40px;
+    border-radius: 2px;
+
+}
+
+.form__control{
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    margin: 30px 0 25px 0;
+
+}
+
+.form-login-btn{
+    margin-right: 23px;
+}
+
+.order-status-change{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 5px;
+}
+
+.order-status-cancel{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+}
+
+.admin-btn--disable{
+    background-color: #888;
+    pointer-events: none;
+}
+
+
+  
+
+
+
+

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+        <div id="align">
+            <ul id="nav">
+                <li><a class="nav-link" href="./admin.html">Home</a></li>
+                <li><a class="nav-link" href="./productmanage.html">Quản lý Mặt Hàng</a></li>
+                <li><a class="nav-link" href="./orderadmin.html">Quản lý Hóa đơn</a></li>
+                <li><a class="nav-link" href="./accountmanage.html">Quản lý tài khoản</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <div class="grid">
+            <div class="form-input">
+                <div>
+                    <label>Tên Mặt Hàng</label>
+                    <input type="text" name="tenMH">
+                </div>
+                <div>
+                    <label>Loại Hàng</label>
+                    <select class="product-category">
+                        <option value="001">Thiết bị điện tử</option>
+                    </select>
+                </div>
+                <div>
+                    <label>Giá</label>
+                    <input type="number" name="gia">
+                </div>
+                <div>
+                    <label>Số lượng</label>
+                    <input type="number" name="soLuong">
+                </div>
+                <div>
+                    <label>Hãng sản xuất</label>
+                    <input type="text" name="hangSanXuat">
+                </div>
+                <div>
+                    <label>Xuất xứ</label>
+                    <input type="text" name="xuatXu">
+                </div>
+
+                <div class="input-div">
+                    <p class="input-image-text">Drag & drop photos here or <strong>Browse</strong></p>
+                    <output class="hidden"></output>
+                    <input type="file" class="file" multiple="multiple" accept="image/jpeg, image/png, image/jpg">
+                </div>
+                  
+
+                <button class="admin-btn add-product-btn" onclick="handleAddProduct()">Thêm</button>
+                <button class="admin-btn update-product-btn hidden" onclick="handleUpdateProduct()">Lưu thay đổi</button>
+
+            </div>
+
+        </div>
+    </div>
+    
+    <div class="footer">
+
+    </div>
+
+    <script src="./assets/js/product.js"></script>
+</body>
+</html>

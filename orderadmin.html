@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+        <div id="align">
+            <ul id="nav">
+                <li><a class="nav-link" href="./admin.html">Home</a></li>
+                <li><a class="nav-link" href="./productmanage.html">Quản lý Mặt Hàng</a></li>
+                <li><a class="nav-link" href="./orderadmin.html">Quản lý Hóa đơn</a></li>
+                <li><a class="nav-link" href="./accountmanage.html">Quản lý tài khoản</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <div class="grid">
+            <table class="product-table">
+                <thead>
+                    <tr class="product-table__header">
+                        <th>Mã hóa đơn</th>
+                        <th>User</th>
+                        <th>Ngày</th>
+                        <th>Trạng thái</th>
+                        <th>Tổng tiền</th>
+                        <th>Địa chỉ giao</th>
+                        <th>Số điện thoại liên lạc</th>
+                        <th>Thao tác</th>
+                    </tr>
+                </thead>
+                <tbody class="product-table__item">
+                    <tr>
+                        <td>1</td>
+                        <td>thy</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <div class="product-table__control">
+                                <button class="admin-btn order-status-change">
+                                    Xử lý đơn
+                                </button>
+                                <div class="control-seperate">|</div>
+                                <button href="" class="admin-btn order-status-cancel">
+                                    Hủy đơn
+                                </button>
+
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+    
+    <div class="footer">
+
+    </div>
+    <script src="./assets/js/orderadmin.js"></script>
+</body>
+</html>

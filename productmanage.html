@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+        <div id="align">
+            <ul id="nav">
+                <li><a class="nav-link" href="./admin.html">Home</a></li>
+                <li><a class="nav-link" href="./productmanage.html">Quản lý Mặt Hàng</a></li>
+                <li><a class="nav-link" href="./orderadmin.html">Quản lý Hóa đơn</a></li>
+                <li><a class="nav-link" href="./accountmanage.html">Quản lý tài khoản</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <div class="grid">
+            <div class="admin__control">
+                <a href="./product.html" class="admin-btn product-add">Thêm mặt hàng</a>
+            </div>
+            <table class="product-table">
+                <thead>
+                    <tr class="product-table__header">
+                        <th>Image</th>
+                        <th>Mã mặt hàng</th>
+                        <th>Tên mặt hàng</th>
+                        <th>Loại</th>
+                        <th>Giá (đồng)</th>
+                        <th>Số lượng</th>
+                        <th>Hãng sản xuất</th>
+                        <th>Xuất xứ</th>
+                        <th>Thao tác</th>
+                    </tr>
+                </thead>
+                <tbody class="product-table__item">
+                    <tr>
+                        <td><img class="product-image" src="./assets/img/product__001.jpg" alt=""></td>
+                        <td>24</td>
+                        <td>Tai nghe bluetooth AMOI F9 PRO TWS 5.0 bản không dây cảm ứng chống nước IPX5, chống ồn tích hợp sạc dự phòng 2500mAh</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <div class="product-table__control">
+                                <a href="" class="admin-btn product-change">
+                                    Sửa
+                                </a>
+                                <div class="control-seperate">|</div>
+                                <a href="" class="admin-btn product-delete">
+                                    Xóa
+                                </a>
+
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+    
+    <div class="footer">
+
+    </div>
+    <script src="./assets/js/productmanage.js"></script>
+</body>
+</html>
